@@ -1,0 +1,7 @@
+{
+   "name":"EmreRed\\OrganikHaberlesme-PHP-API-Client",
+   "autoload":[
+      "OrganikHaberlesme.php"
+   ],
+   "return":"OrganikHaberlesme"
+}
