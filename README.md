@@ -13,6 +13,24 @@ $organik = Candy::plugin('EmreRed/OrganikHaberlesme-PHP-API-Client');
 
 <hr>
 
+
+#### API Bilgileri Sorgula
+```php
+$organik->me();
+```
+
+<hr>
+
+#### Detaylı İstek Bilgileri
+```php
+echo $organik->get()->request()->url;  // Yapılan son istek URL adresi
+echo $organik->get()->request()->body; // Gönderilen son istek gövdesi
+echo $organik->get()->result()->code;  // Son istekten dönen sonuç kodu
+echo $organik->get()->result()->body;  // Son istekten dönen veri
+```
+
+<hr>
+
 #### Kullanıcı İşlemleri
 ```php
 $user = $organik->user();
