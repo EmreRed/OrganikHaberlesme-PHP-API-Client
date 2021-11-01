@@ -41,7 +41,7 @@ echo $organik->get()->result()->body;  // Son istekten dönen veri
 ```php
 $user = $organik->user();
 ```
-<a href="https://github.com/EmreRed/OrganikHaberlesme-PHP-API-Client/DOCS/user.md">Kullanıcı İşlemleri Dökümanı</a>
+<a href="https://github.com/EmreRed/OrganikHaberlesme-PHP-API-Client/blob/master/DOCS/user.md">Kullanıcı İşlemleri Dökümanı</a>
 
 <hr>
 
@@ -49,4 +49,4 @@ $user = $organik->user();
 ```php
 $mail = $organik->mail();
 ```
-<a href="https://github.com/EmreRed/OrganikHaberlesme-PHP-API-Client/DOCS/mail.md">E-Posta İşlemleri Dökümanı</a>
+<a href="https://github.com/EmreRed/OrganikHaberlesme-PHP-API-Client/blob/master/DOCS/mail.md">E-Posta İşlemleri Dökümanı</a>
