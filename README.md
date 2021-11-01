@@ -13,3 +13,16 @@ $organik = Candy::plugin('EmreRed/OrganikHaberlesme-PHP-API-Client');
 
 <hr>
 
+#### Kullanıcı İşlemleri
+```php
+$user = $organik->user();
+```
+<a href="https://github.com/EmreRed/OrganikHaberlesme-PHP-API-Client/DOCS/user.md">Kullanıcı İşlemleri Dökümanı</a>
+
+<hr>
+
+#### E-Posta İşlemleri
+```php
+$mail = $organik->mail();
+```
+<a href="https://github.com/EmreRed/OrganikHaberlesme-PHP-API-Client/DOCS/mail.md">E-Posta İşlemleri Dökümanı</a>
