@@ -39,12 +39,11 @@ class Mail {
   }
 
   function group(){
-    $class = new class {
+    return new class() {
       function get(){
         return \OrganikHaberlesme::raw('mail/group/get');
       }
     };
-    return new $class();
   }
 
   function recipient($id = null){

@@ -27,13 +27,27 @@ class OrganikHaberlesme {
     return self::raw('me');
   }
 
+  public static function sms(){
+    if(!in_array('sms',self::$_inc)){
+      include __DIR__.'/src/Sms.php';
+      self::$_inc[] = 'sms';
+    }
+    return new \OrganikHaberlesme\Sms();
+  }
+
   public static function mail(){
-    if(!in_array('mail',self::$_inc)) include __DIR__.'/src/Mail.php';
+    if(!in_array('mail',self::$_inc)){
+      include __DIR__.'/src/Mail.php';
+      self::$_inc[] = 'mail';
+    }
     return new \OrganikHaberlesme\Mail();
   }
 
   public static function user(){
-    if(!in_array('user',self::$_inc)) include __DIR__.'/src/User.php';
+    if(!in_array('user',self::$_inc)){
+      include __DIR__.'/src/User.php';
+      self::$_inc[] = 'user';
+    }
     return new \OrganikHaberlesme\User();
   }
 
